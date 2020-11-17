@@ -1,4 +1,4 @@
-/home/imbac/Downloads/RabbitMQ_Example/3_Receiver_SpringBootRabbitMQHelloWorld/src/main/java/com/javainuse/config/RabbitMQConfig.java
-/home/imbac/Downloads/RabbitMQ_Example/3_Receiver_SpringBootRabbitMQHelloWorld/src/main/java/com/javainuse/model/Employee.java
-/home/imbac/Downloads/RabbitMQ_Example/3_Receiver_SpringBootRabbitMQHelloWorld/src/main/java/com/javainuse/SpringBootHelloWorldApplication.java
-/home/imbac/Downloads/RabbitMQ_Example/3_Receiver_SpringBootRabbitMQHelloWorld/src/main/java/com/javainuse/service/RabbitMQConsumer.java
+/home/imbac/Downloads/SpringBootRabbitMQConsumer/SpringBootRabbitMQConsumer/src/main/java/com/javainuse/config/RabbitMQConfig.java
+/home/imbac/Downloads/SpringBootRabbitMQConsumer/SpringBootRabbitMQConsumer/src/main/java/com/javainuse/model/Employee.java
+/home/imbac/Downloads/SpringBootRabbitMQConsumer/SpringBootRabbitMQConsumer/src/main/java/com/javainuse/service/RabbitMQConsumer.java
+/home/imbac/Downloads/SpringBootRabbitMQConsumer/SpringBootRabbitMQConsumer/src/main/java/com/javainuse/SpringRabbitMQListnerApplication.java
