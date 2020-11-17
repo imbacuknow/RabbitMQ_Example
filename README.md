@@ -1,1 +1,3 @@
-# RabbitMQ_Example #BY SpringBoot
+# RabbitMQ_Example 
+BY SpringBoot
+ref: https://www.javainuse.com/messaging/rabbitmq
