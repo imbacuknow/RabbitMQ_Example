@@ -9,11 +9,11 @@ import com.javainuse.model.Employee;
 @Component
 public class RabbitMQConsumer {
 
-     @RabbitListener(queues = "${javainuse.rabbitmq.queue}")
-     public void recievedMessage(Employee employee) {
-          JSONObject jo = new JSONObject();
-          jo.put("empId", employee.getEmpId());
-          jo.put("empName", employee.getEmpName());
-          System.out.println("Recieved Message From RabbitMQ: " + jo);
-     }
+	@RabbitListener(queues = "${javainuse.rabbitmq.queue}")
+	public void recievedMessage(Employee employee) {
+		JSONObject jo = new JSONObject();
+		jo.put("empId", employee.getEmpId());
+		jo.put("empName", employee.getEmpName());
+		System.out.println("Recieved Message From RabbitMQ: " + jo);
+	}
 }
