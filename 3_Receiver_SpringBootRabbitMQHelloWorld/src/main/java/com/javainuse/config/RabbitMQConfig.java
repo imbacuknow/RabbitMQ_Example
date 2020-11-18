@@ -29,32 +29,27 @@ public class RabbitMQConfig {
 
 	@Bean
 	Queue queue() {
-		// System.out.println("1");
 		return new Queue(queueName, false);
 	}
 
-	@Bean
-	DirectExchange exchange() {
-		// System.out.println("2");
-		return new DirectExchange(exchange);
-	}
+	// @Bean
+	// DirectExchange exchange() {
+	// return new DirectExchange(exchange);
+	// }
 
-	@Bean
-	Binding binding(Queue queue, DirectExchange exchange) {
-		// System.out.println("3");
-		return BindingBuilder.bind(queue).to(exchange).with(routingkey);
-	}
+	// @Bean
+	// Binding binding(Queue queue, DirectExchange exchange) {
+	// return BindingBuilder.bind(queue).to(exchange).with(routingkey);
+	// }
 
 	@Bean
 	public MessageConverter jsonMessageConverter() {
-		// System.out.println("4");
 		return new Jackson2JsonMessageConverter();
 	}
 
-	public AmqpTemplate rabbitTemplate(ConnectionFactory connectionFactory) {
-		final RabbitTemplate rabbitTemplate = new RabbitTemplate(connectionFactory);
-		rabbitTemplate.setMessageConverter(jsonMessageConverter());
-		// System.out.println("5");
-		return rabbitTemplate;
-	}
+	// public AmqpTemplate rabbitTemplate(ConnectionFactory connectionFactory) {
+	// final RabbitTemplate rabbitTemplate = new RabbitTemplate(connectionFactory);
+	// rabbitTemplate.setMessageConverter(jsonMessageConverter());
+	// return rabbitTemplate;
+	// }
 }

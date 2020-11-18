@@ -1,7 +1,6 @@
 package com.javainuse.config;
 
 import org.springframework.amqp.core.Queue;
-import org.springframework.amqp.rabbit.connection.CachingConnectionFactory;
 import org.springframework.amqp.rabbit.connection.ConnectionFactory;
 import org.springframework.amqp.rabbit.listener.MessageListenerContainer;
 import org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer;
@@ -14,7 +13,7 @@ import com.javainuse.service.RabbitMQListner;
 @Configuration
 public class RabbitMQConfig {
 
-     @Value("${javainuse.rabbitmq.queue}")
+     @Value("${rabbitmq.queue}")
      String queueName;
 
      @Value("${spring.rabbitmq.username}")
